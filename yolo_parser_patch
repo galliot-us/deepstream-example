@@ -1,0 +1,10 @@
+--- /opt/nvidia/deepstream/deepstream-5.1/sources/objectDetector_Yolo/nvdsinfer_custom_impl_Yolo/nvdsparsebbox_Yolo.cpp	2021-02-16 09:57:14.000000000 +0000
++++ nvdsinfer_custom_impl_Yolo/nvdsparsebbox_Yolo.cpp	2022-03-07 18:07:41.296339843 +0000
+@@ -98,6 +98,7 @@
+ 
+     bbi.detectionConfidence = maxProb;
+     bbi.classId = maxIndex;
++    if (bbi.classId != 0) return;
+     binfo.push_back(bbi);
+ }
+ 
