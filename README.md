@@ -1,3 +1,6 @@
+> **Galliot now hosts all Neuralet’s content and expertise gained in three years of work and completing high-quality applications, mainly in Computer Vision and Deep Learning. [More Info](https://galliot.us/blog/neuralet-migrated-to-galliot/)**
+
+
 # Galliot Face Anonymizer with DeepStream
 This repository contains the codebase related to our article on creating a face anonymizer application with [Nvidia DeepStream](https://developer.nvidia.com/deepstream-sdk).
 galliot have published three other articles which walk you through the features of Nvidia DeepStream and its python Bindings.
