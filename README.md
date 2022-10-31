@@ -1,8 +1,9 @@
-# Neuralet Face Anonymizer with DeepStream
+# Galliot Face Anonymizer with DeepStream
 This repository contains the codebase related to our article on creating a face anonymizer application with [Nvidia DeepStream](https://developer.nvidia.com/deepstream-sdk).
-Neuralet have published two other articles which walk you through the features of Nvidia DeepStream and its python Bindings.
-[Part 1](https://neuralet.com/article/deploying-neuralet-adaptive-learning-models-using-nvidia-deepstream)
-[Part 2](https://neuralet.com/article/nvidia-deepstream-python-bindings-customize-your-applications)
+galliot have published three other articles which walk you through the features of Nvidia DeepStream and its python Bindings.
+[Part 1](https://galliot.us/blog/adaptive-learning-deployment-with-nvidia-deepstream/)
+[Part 2](https://galliot.us/blog/deepstream-python-bindings-customization/)
+[Part 3](https://galliot.us/blog/deepstream-example-face-anonymizer/)
 
 
 ## Prerequisites
@@ -13,17 +14,17 @@ Neuralet have published two other articles which walk you through the features o
 ## Getting Started
 1. Clone The repository:
 ```
-git clone https://github.com/neuralet/deepstream-example.git
+git clone https://github.com/galliot-us/deepstream-example.git
 
 cd deepstream-example
 ```
  1. build the docker image:
 ```
-docker build -f face_annonymizer_ds_51_x86.Dockerfile -t "neuralet/face_anonymizer_ds:x86" .
+docker build -f face_annonymizer_ds_51_x86.Dockerfile -t "galliot/face_anonymizer_ds:x86" .
 ```
  2. Run the docker image:
 ```
-docker run -it  --runtime nvidia --gpus all -v "$PWD/":/repo neuralet/face_anonymizer_ds:x86
+docker run -it  --runtime nvidia --gpus all -v "$PWD/":/repo galliot/face_anonymizer_ds:x86
 ``` 
  3. Run the `prepare_models.bash` to download the object detectors and build the required modules:
 ```
